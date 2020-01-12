@@ -11,9 +11,10 @@ display the following information:
 
   "The downloadable content required for this save is not available."
   
-This is caused by the fact that each version of the game has a different set of DLC packs.
+This is caused by the fact that different versions of the game have different numbering of DLC packs.
 Unfortunately, the information about installed DLCs is embedded inside each save file, causing them
 to be incompatible with different versions of the game.
+
 Both PC versions (GOG and Steam) of Bloodstained RotN store the save files in the following
 subdirectory of the user folder:
 
@@ -22,9 +23,9 @@ subdirectory of the user folder:
 
 --- PROGRAM USAGE ---
 
-The converter requires that the 64-Bit version of the Java SE Runtime Environment 13 (JRE 13)
-or newer is installed on your computer. The prebuilt version of the program consists of a .jar file (the application
-itself) and the "data" folder, which contains the following files:
+To use the converter you need the 64-Bit version of the Java SE Runtime Environment 13 (JRE 13) or newer installed
+on your computer. The prebuilt version of the program consists of a .jar file (the application itself) and the "data"
+folder, which contains the following files:
 
   GOG_DLC.dat	-	DLC info extracted from a decrypted GOG save file. The provided .dat file
 					contains references to the following DLC packs: DLC_0001, DLC_0003, DLC_0004,
@@ -79,13 +80,13 @@ The available commands are listed below:
 
   java -jar Bloodstained_RotN_SaveConverter.jar -checksum encrypted_file.sav
   
-    Recalculates the checksum of encrypted save file.
+    Recalculates the checksum of an encrypted save file.
 
 
 Additionally, two sample scripts are provided with the program:
 
 
-  gog2steam.bat			-	Instructs the program to convert "Story_Slot20.sav" from GOG to Steam
+  gog2steam.bat			-	Instructs the program to convert a single save file from GOG to Steam
 							version.
 							
   gog2steam_batch.bat	-	Instructs the program to convert all save files inside the "SaveGames"
