@@ -1,7 +1,9 @@
 Bloodstained: Ritual of the Night PC Save Game Converter
 Author: DarkMarkZX
 
+
 --- INTRODUCTION ---
+
 This program can be used to transfer save files between GOG, Steam and potentially other versions
 of Bloodstained RotN. Normally, when you try to load an incompatible save file, the game will
 display the following information:
@@ -13,7 +15,9 @@ Both PC versions (GOG and Steam) of Bloodstained RotN store the save files in th
 subdirectory of the user folder:
   AppData\Local\BloodstainedRotN\GOG\Saved\SaveGames
 
+
 --- PROGRAM USAGE ---
+
 The converter requires that the 64-Bit version of the Java SE Runtime Environment 13 (JRE 13)
 or newer is installed on your computer. The prebuilt version of the program is located in the
 "dist" subdirectory and consists of a .jar file (the application itself) and the "data" folder,
@@ -38,34 +42,51 @@ which contains the following files:
 The program must be run from a Command-line interpreter, such as cmd.exe or Windows PowerShell.
 The available commands are listed below:
 
+
   java -jar Bloodstained_RotN_SaveConverter.jar -gog2steam input_file.sav output_file.sav
+  
     Decrypts save file, replaces GOG DLC data (specified in "data/GOG_DLC.dat") with Steam DLC data
 	(specified in "data/Steam_DLC.dat"), encrypts the file and recalculates its checksum.
 
+
   java -jar Bloodstained_RotN_SaveConverter.jar -steam2gog input_file.sav output_file.sav
+  
     Decrypts save file, replaces Steam DLC data (specified in "data/Steam_DLC.dat") with GOG DLC
 	data (specified in "data/GOG_DLC.dat"), encrypts the file and recalculates its checksum.
 
+
   java -jar Bloodstained_RotN_SaveConverter.jar -encrypt input_file.sav output_file.sav
+  
     Can be used to either decrypt an encrypted save file (for the purpose of hacking the game or
 	extracting DLC information) or encrypt a decrypted file (so it may be loaded by the game).
 
+
   java -jar Bloodstained_RotN_SaveConverter.jar -gog2steam_dec input_file.sav output_file.sav
+  
     Converts a decrypted save from GOG to Steam format, using information provided by the
 	"data/GOG_DLC.dat" and "data/Steam_DLC.dat" files.
 
+
   java -jar Bloodstained_RotN_SaveConverter.jar -steam2gog_dec input_file.sav output_file.sav
+  
     Converts a decrypted save from Steam to GOG format, using information provided by the
 	"data/Steam_DLC.dat" and "data/GOG_DLC.dat" files.
 
+
   java -jar Bloodstained_RotN_SaveConverter.jar -checksum encrypted_file.sav
+  
     Recalculates the checksum of encrypted save file.
 
+
 Additionally, two sample scripts are provided with the program:
+
   gog2steam.bat			-	Instructs the program to convert "Story_Slot20.sav" from GOG to Steam
 							version.
+							
   gog2steam_batch.bat	-	Instructs the program to convert all save files inside the "SaveGames"
 							directory from GOG to Steam version.
 
+
 --- SOURCE CODE ---
+
 Source code is provided in the form of an Apache NetBeans IDE 11 project.
