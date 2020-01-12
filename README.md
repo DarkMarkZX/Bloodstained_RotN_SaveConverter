@@ -40,7 +40,7 @@ itself) and the "data" folder, which contains the following files:
 					editor, such as HxD) and replace the contents of the "Steam_DLC.dat" file
 					provided with this program.
 					
-  key.dat	-	Key used for decrypting and encrypting save files. No modifications required.
+  key.dat		-	Key used for decrypting and encrypting save files. No modifications required.
 
 
 The program must be run from a Command-line interpreter, such as cmd.exe or Windows PowerShell.
@@ -85,7 +85,7 @@ The available commands are listed below:
 Additionally, two sample scripts are provided with the program:
 
 
-  gog2steam.bat		-	Instructs the program to convert "Story_Slot20.sav" from GOG to Steam
+  gog2steam.bat			-	Instructs the program to convert "Story_Slot20.sav" from GOG to Steam
 							version.
 							
   gog2steam_batch.bat	-	Instructs the program to convert all save files inside the "SaveGames"
