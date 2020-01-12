@@ -95,3 +95,12 @@ Additionally, two sample scripts are provided with the program:
 --- SOURCE CODE ---
 
 Source code is provided in the form of an Apache NetBeans IDE 11 project.
+
+
+--- SPECIAL THANKS ---
+
+I'd like to thank the members of gbatemp.net:
+
+  zestiva:	for creating the decryption tool that helped me understand the save game file format
+
+  Jmandawg:	for discovering the proper method of recalculating save file checksums
