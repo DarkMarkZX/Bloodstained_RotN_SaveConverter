@@ -8,12 +8,15 @@ Author: DarkMarkZX
 This program can be used to transfer save files between GOG, Steam and potentially other versions
 of Bloodstained RotN. Normally, when you try to load an incompatible save file, the game will
 display the following information:
+
   "The downloadable content required for this save is not available."
+  
 This is caused by the fact that each version of the game has a different set of DLC packs.
 Unfortunately, the information about installed DLCs is embedded inside each save file, causing them
 to be incompatible with different versions of the game.
 Both PC versions (GOG and Steam) of Bloodstained RotN store the save files in the following
 subdirectory of the user folder:
+
   AppData\Local\BloodstainedRotN\GOG\Saved\SaveGames
 
 
@@ -39,6 +42,7 @@ which contains the following files:
 					provided with this program.
 					
   key.dat		-	Key used for decrypting and encrypting save files. No modifications required.
+
 
 The program must be run from a Command-line interpreter, such as cmd.exe or Windows PowerShell.
 The available commands are listed below:
@@ -80,6 +84,7 @@ The available commands are listed below:
 
 
 Additionally, two sample scripts are provided with the program:
+
 
   gog2steam.bat			-	Instructs the program to convert "Story_Slot20.sav" from GOG to Steam
 							version.
