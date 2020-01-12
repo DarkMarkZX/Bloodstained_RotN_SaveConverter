@@ -40,7 +40,7 @@ itself) and the "data" folder, which contains the following files:
 					editor, such as HxD) and replace the contents of the "Steam_DLC.dat" file
 					provided with this program.
 					
-  key.dat		-	Key used for decrypting and encrypting save files. No modifications required.
+  key.dat	-	Key used for decrypting and encrypting save files. No modifications required.
 
 
 The program must be run from a Command-line interpreter, such as cmd.exe or Windows PowerShell.
