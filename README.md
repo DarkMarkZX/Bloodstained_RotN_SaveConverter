@@ -23,9 +23,8 @@ subdirectory of the user folder:
 --- PROGRAM USAGE ---
 
 The converter requires that the 64-Bit version of the Java SE Runtime Environment 13 (JRE 13)
-or newer is installed on your computer. The prebuilt version of the program is located in the
-"dist" subdirectory and consists of a .jar file (the application itself) and the "data" folder,
-which contains the following files:
+or newer is installed on your computer. The prebuilt version of the program consists of a .jar file (the application
+itself) and the "data" folder, which contains the following files:
 
   GOG_DLC.dat	-	DLC info extracted from a decrypted GOG save file. The provided .dat file
 					contains references to the following DLC packs: DLC_0001, DLC_0003, DLC_0004,
